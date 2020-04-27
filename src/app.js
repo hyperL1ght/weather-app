@@ -27,7 +27,7 @@ app.get('', (req, res) => {
     // the rendered html will be in public dir at request
     res.render('index', {
         title: 'Weather',
-        name: 'Andy Smith'
+        name: 'MB'
     })
 })
 
@@ -36,7 +36,7 @@ app.get('/about', (req, res) => {
     // the rendered html will be in public dir at request
     res.render('about', {
         title: 'About',
-        name: 'Andy Smith'
+        name: 'MB'
     })
 })
 
@@ -45,7 +45,7 @@ app.get('/help', (req, res) => {
     // the rendered html will be in public dir at request
     res.render('help', {
         title: 'Help',
-        name: 'Andy Smith',
+        name: 'MB',
         helpText: 'Some help text'
     })
 })
@@ -105,7 +105,7 @@ app.get('/product', (req, res) =>{
 app.get('/help/*', (req, res) =>{
     res.render('404', {
         title: '404',
-        name: 'Andy Smith',
+        name: 'MB',
         errorMessage: 'Help article not found.'
 
     })
@@ -116,7 +116,7 @@ app.get('/help/*', (req, res) =>{
 app.get('*', (req, res) => {
     res.render('404', {
         title: '404',
-        name: 'Andy Smith',
+        name: 'MB',
         errorMessage: 'Page not found.'
 
     })
