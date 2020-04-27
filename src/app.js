@@ -6,6 +6,8 @@ const forcast  = require('./utils/forcast')
 
 // create the express app
 const app = express()
+// use heroku port or the 3000 for local dev
+const port = process.env.PORT || 3000
 
 // define path for Express config
 const publicDirectoryPath = path.join(__dirname, '../public')
@@ -121,6 +123,6 @@ app.get('*', (req, res) => {
 })
 
 // start running the server
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('Server is up on port 3000.')
 })
